@@ -1,0 +1,15 @@
+{
+    "_config_name": "image.style.people",
+    "label": "People (300x300)",
+    "name": "people",
+    "effects": [
+        {
+            "name": "image_scale_and_crop",
+            "data": {
+                "width": "300",
+                "height": "300"
+            },
+            "weight": "1"
+        }
+    ]
+}
