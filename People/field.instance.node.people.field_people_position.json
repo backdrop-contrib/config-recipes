@@ -5,7 +5,7 @@
     "bundle": "people",
     "label": "Position",
     "widget": {
-        "weight": "-2",
+        "weight": "-3",
         "type": "text_textfield",
         "module": "text",
         "active": 1,
@@ -32,7 +32,7 @@
             "type": "text_default",
             "settings": [],
             "module": "text",
-            "weight": 2
+            "weight": 1
         }
     }
 }
