@@ -22,3 +22,8 @@ Here is the rough order in which I expect files must/should be loaded:
 
 Please, help make this documentation better.
 
+Related core issue for Backdrop CMS:
+
+* [Add 'recipe' project type to Backdrop](https://github.com/backdrop/backdrop-issues/issues/3763)
+
+
