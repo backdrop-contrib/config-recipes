@@ -11,9 +11,9 @@ Currently, I am just importing the files one at a time. Would love suggestions o
 
 Here is the rough order in which I expect files must/should be loaded:
 
-node.type
-image.style
-field.field
-field.instance
-views.view
+* node.type
+* image.style
+* field.field
+* field.instance
+* views.view
 
