@@ -1,4 +1,4 @@
-# backdrop-features
+# backdropcms-features
 
 A library of config features/recipes for export / experimentation
 
