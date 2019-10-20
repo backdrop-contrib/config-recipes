@@ -1,0 +1,4 @@
+type = recipes
+name = Config Recipes
+description = An experimental package of configuration files that can be used to add features to Backdrop CMS sites.
+backdrop = 1.x
