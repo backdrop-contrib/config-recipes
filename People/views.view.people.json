@@ -312,6 +312,22 @@
                 "style_options": {
                     "grouping": [],
                     "title_field": "title"
+                },
+                "css_class": "tatsu-grid col-lg-4",
+                "header": {
+                    "area": {
+                        "id": "area",
+                        "table": "views",
+                        "field": "area",
+                        "relationship": "none",
+                        "group_type": "group",
+                        "ui_name": "",
+                        "label": "",
+                        "empty": 0,
+                        "content": "<h3>Team</h3>\r\n",
+                        "format": "filtered_html",
+                        "tokenize": 0
+                    }
                 }
             }
         },
@@ -334,7 +350,7 @@
                     "type": "views_query",
                     "options": []
                 },
-                "style_plugin": "views_bootstrap_grid_plugin_style",
+                "style_plugin": "default",
                 "defaults": {
                     "style_plugin": false,
                     "style_options": false,
@@ -347,9 +363,9 @@
                 },
                 "style_options": {
                     "grouping": [],
-                    "alignment": "horizontal",
-                    "columns": "3",
-                    "class_prefix": "col-sm"
+                    "row_class": "",
+                    "default_row_class": 1,
+                    "row_class_special": 1
                 },
                 "row_plugin": "fields",
                 "row_options": [],
@@ -557,7 +573,8 @@
                             "label": ""
                         }
                     }
-                }
+                },
+                "block_description": "Team"
             }
         }
     }
