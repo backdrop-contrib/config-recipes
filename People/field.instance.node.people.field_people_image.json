@@ -11,7 +11,19 @@
         "active": 1,
         "settings": {
             "progress_indicator": "throbber",
-            "preview_image_style": "thumbnail"
+            "preview_image_style": "thumbnail",
+            "manualcrop_enable": false,
+            "manualcrop_keyboard": true,
+            "manualcrop_thumblist": false,
+            "manualcrop_inline_crop": false,
+            "manualcrop_crop_info": true,
+            "manualcrop_instant_preview": true,
+            "manualcrop_instant_crop": false,
+            "manualcrop_default_crop_area": true,
+            "manualcrop_maximize_default_crop_area": false,
+            "manualcrop_styles_mode": "include",
+            "manualcrop_styles_list": [],
+            "manualcrop_require_cropping": []
         }
     },
     "description": "",
@@ -35,13 +47,13 @@
         "default": {
             "label": "hidden",
             "type": "image",
+            "weight": "2",
             "settings": {
-                "image_style": "",
+                "image_style": "medium",
                 "image_link": "",
                 "image_float": ""
             },
-            "module": "image",
-            "weight": 2
+            "module": "image"
         }
     }
 }

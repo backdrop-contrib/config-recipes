@@ -313,7 +313,7 @@
                     "grouping": [],
                     "title_field": "title"
                 },
-                "css_class": "tatsu-grid col-lg-4",
+                "css_class": "tatsu-grid col-lg-3",
                 "header": {
                     "area": {
                         "id": "area",
