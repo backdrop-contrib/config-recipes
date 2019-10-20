@@ -1,0 +1,17 @@
+{
+    "_config_name": "field.bundle.node.people",
+    "bundle": "people",
+    "entity_type": "node",
+    "view_modes": [],
+    "extra_fields": {
+        "form": [],
+        "display": {
+            "submitted_by": {
+                "default": {
+                    "weight": "0",
+                    "visible": true
+                }
+            }
+        }
+    }
+}
