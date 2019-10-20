@@ -1,16 +1,40 @@
-# backdropcms-features
+# Config Recipes
 
-A library of config features/recipes for export / experimentation
+A library of config recipes for Backdrop CMS
 
-As a start, each directory in the library should contain the config files for one recipe/feature. In theory, we should be able to add the config files from any feature directory to an existing Backdrop project and then synchronize the config files, to add that feature to the site. 
+This is intended to be the first step towards a much better solution to move features from one backdrop site to another (Drupal 7 had the Features module - https://www.drupal.org/project/features). 
 
-As of this time, we done very little experimentation to test how this works. 
+Each directory contains a specific recipe that can be used to import a feature into an existing Backdrop CMS site. Recipes may include things like Content Types, Fields, Field Instances, Views, and anything else that is created in config files.  
 
-This "library" currently includes:
+Some of these recipes will eventually look better using the Tatsu theme, however that should not be a requirement. We'll provide additional documentation on this in the future. 
+
+## This "library" currently includes:
 * FAQ - A recipe to create a FAQ content type and view
-* People - Creates a "people" content type that can easily be used for a staff directory. One sample view is already included.  
+* People - Creates a "people" content type that can easily be used for a staff directory. One sample view is already included for a view of your "Team" built off the "people" content type. Works best with Tatsu theme. 
+* Locations - Requires Addressfield, Geofield, Geocoder, and GeoPHP modules. (Under development - PR welcome). 
+* Testimonials - A recipe to create a testimonial content type and view. 
 
-Currently, I am just importing the files one at a time. Would love suggestions on how to make this better. Files must be loaded in a logical order, for example you must import the node.type file before the field.field.field file and must load the field.field.field file before the field.instance file.
+## Installation
+
+We are currently experimenting with the best way to install these config recipes and hope for ways to automate this in the near future. If you have ideas on creating a contrib module that will help with this process, please let us know. 
+
+### Intall multiple files at once 
+
+You can import one or more recipes in as a batch using the following process. 
+
+1) Full export of existing site config 
+2) Add recipes to site config 
+3) Full import of existing site config plus the added recipes
+
+Using this process, Backdrop CMS should be able to process the new config files in the correct order. 
+
+NOTE: If you have easy access to the config directories, you can drop ALL the files directly into the staging directory. To use the UI to import the full config, you will need to create a tar.gz file and you must be sure to exclude the partent directory from the file. 
+
+See discussion: https://forum.backdropcms.org/forum/how-add-bundle-or-group-config-files-site
+
+### Install individual files
+
+Intially, we installed these recipes one config file at a time using the single file import feature in the UI - admin/config/development/configuration/single/import. This is a little tricky, because you must import the files in the correct order or you will generate errors. For example you must import the node.type file before the field.field.field file and must load the field.field.field file before the field.instance file.
 
 Here is the rough order in which I expect files must/should be loaded:
 
@@ -20,10 +44,16 @@ Here is the rough order in which I expect files must/should be loaded:
 * field.instance
 * views.view
 
-Please, help make this documentation better.
-
-Related core issue for Backdrop CMS:
+## Related issues and projects:
 
 * [Add 'recipe' project type to Backdrop](https://github.com/backdrop/backdrop-issues/issues/3763)
 
+## Maintainers
 
+- Tim Erickson (https://github.com/stpaultim).
+- Seeking co-maintainers
+
+## LICENSE
+
+This project is GPL v2 software. See the LICENSE.txt file in this directory for
+complete text.
