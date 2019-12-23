@@ -14,9 +14,16 @@ Some of these recipes will eventually look better using the Tatsu theme, however
 * Locations - Requires Addressfield, Geofield, Geocoder, and GeoPHP modules. (Under development - PR welcome). 
 * Testimonials - A recipe to create a testimonial content type and view. 
 
+Each directory contains:
+* A README file that includes information regarding dependencies.
+* The individual .json files included in that recipe
+* A clean .tar archive of the files included in that recipe
+
 ## Installation
 
-We are currently experimenting with the best way to install these config recipes and hope for ways to automate this in the near future. If you have ideas on creating a contrib module that will help with this process, please let us know. 
+We have created a very rough module that will upload recipes compressed into a .tar format. 
+This development project [https://github.com/backdrop-contrib/config_batch_upload] is working,
+but has very limited features and is still being tested. 
 
 ### Intall multiple files at once 
 
@@ -28,7 +35,7 @@ You can import one or more recipes in as a batch using the following process.
 
 Using this process, Backdrop CMS should be able to process the new config files in the correct order. 
 
-NOTE: If you have easy access to the config directories, you can drop ALL the files directly into the staging directory. To use the UI to import the full config, you will need to create a tar.gz file and you must be sure to exclude the partent directory from the file. 
+NOTE: If you have easy access to the config directories, you can drop ALL the files directly into the staging directory. To use the UI to import the full config, you will need to create a tar.gz file and you must be sure to EXCLUDE the partent directory from the file. 
 
 See discussion: https://forum.backdropcms.org/forum/how-add-bundle-or-group-config-files-site
 
