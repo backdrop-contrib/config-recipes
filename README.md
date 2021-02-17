@@ -6,7 +6,7 @@ This is intended to be the first step towards a much better solution to move fea
 
 Each directory contains a specific recipe that can be used to import a feature into an existing Backdrop CMS site. Recipes may include things like Content Types, Fields, Field Instances, Views, and anything else that is created in config files.  
 
-Some of these recipes will eventually look better using the Tatsu theme, however that should not be a requirement. We'll provide additional documentation on this in the future. 
+For more information aboout creating recipes, see: https://github.com/backdrop-contrib/config_recipes/wiki/Creating-Recipes
 
 ## This "library" currently includes:
 * FAQ - A recipe to create a FAQ content type and view
