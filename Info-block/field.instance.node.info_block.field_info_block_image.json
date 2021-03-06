@@ -5,7 +5,7 @@
     "bundle": "info_block",
     "label": "Image",
     "widget": {
-        "weight": "-3",
+        "weight": "1",
         "type": "image_image",
         "module": "image",
         "active": 1,
