@@ -1,6 +1,10 @@
 # Config Recipes
 
-A library of config recipes for Backdrop CMS
+## This module is deprecated.
+
+We recommend searching for "recipes" on BackdropCMS.org for stand alone recipes that can be installed directly to Backdrop sites. 
+
+## A library of config recipes for Backdrop CMS
 
 This is intended to be the first step towards a much better solution to move features from one backdrop site to another (Drupal 7 had the Features module - https://www.drupal.org/project/features). 
 
