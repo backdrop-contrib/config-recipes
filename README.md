@@ -1,6 +1,10 @@
 # Config Recipes
 
-A library of config recipes for Backdrop CMS
+## This module is deprecated.
+
+We recommend searching for "recipes" on BackdropCMS.org for stand alone recipes that can be installed directly to Backdrop sites. 
+
+## A library of config recipes for Backdrop CMS
 
 This is intended to be the first step towards a much better solution to move features from one backdrop site to another (Drupal 7 had the Features module - https://www.drupal.org/project/features). 
 
@@ -12,7 +16,9 @@ For more information aboout creating recipes, see: https://github.com/backdrop-c
 * FAQ - A recipe to create a FAQ content type and view
 * People - Creates a "people" content type that can easily be used for a staff directory. One sample view is already included for a view of your "Team" built off the "people" content type. Works best with Tatsu theme. 
 * Locations - Requires Addressfield, Geofield, Geocoder, and GeoPHP modules. (Under development - PR welcome). 
-* Testimonials - A recipe to create a testimonial content type and view. 
+* Testimonials - A recipe to create a testimonial content type and view.
+* Events - A simple events recipe with date and venue fields
+* Info blocks- A recipe to create a content type without a path for use with blocks (designed specifically to work with Opera theme). 
 
 Each directory contains:
 * A README file that includes information regarding dependencies.
